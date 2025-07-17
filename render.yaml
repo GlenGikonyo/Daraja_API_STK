@@ -1,7 +1,7 @@
 services:
   - type: web
-    name: daraja-tutorial
-    env: php
+    name: mpesa-callback
+    env: docker
     plan: free
-    buildCommand: ""
-    startCommand: "php -S 0.0.0.0:10000 -t ."
+    dockerfilePath: Dockerfile
+    autoDeploy: true
